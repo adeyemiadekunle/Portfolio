@@ -1,0 +1,87 @@
+.letter-container {
+  display: flex;
+  white-space: nowrap;
+}
+
+.letter-animation {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInLeft 0.5s ease-out forwards;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 7rem;
+  letter-spacing: 1.2rem;
+  font-weight: 700;
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Add animation delay for each letter */
+
+@media screen and (max-width: 992px) {
+  .letter-container {
+    flex-wrap: wrap;
+    padding: 0 12px;
+  }
+
+  .letter-animation {
+    font-size: 3.5rem;
+    letter-spacing: 1rem;
+    font-weight: 700;
+  }
+}
+
+.letter-container .eleven {
+  animation-delay: 0.2s;
+  color: #ff0000;
+}
+
+.letter-container .ten {
+  animation-delay: 0.4s;
+  color: #ff0000;
+}
+
+.letter-container .nine {
+  animation-delay: 0.6s;
+  color: #ff0000;
+}
+
+.letter-container .eight {
+  animation-delay: 0.8s;
+  color: #ff0000;
+}
+
+.letter-container .seven {
+  animation-delay: 1s;
+}
+
+.letter-container .six {
+  animation-delay: 1.2s;
+}
+
+.letter-container .five {
+  animation-delay: 1.4s;
+}
+
+.letter-container .four {
+  animation-delay: 1.6s;
+}
+
+.letter-container .three {
+  animation-delay: 1.8s;
+}
+
+.letter-container .two {
+  animation-delay: 2s;
+}
+
+.letter-container .one {
+  animation-delay: 2.2s;
+}
+
+/* Add more nth-child rules for more letters as needed */
