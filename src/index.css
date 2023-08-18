@@ -50,7 +50,7 @@ header .nav_container {
 }
 
 .nav_container .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -60,10 +60,11 @@ header .nav_container {
 
 
 .homepage {
-  height: 80dvh;
+  min-height: 60dvh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 
@@ -74,8 +75,12 @@ header .nav_container {
   }
 
   .nav_container .logo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
+  }
+
+  .homepage {
+    margin-top: 30px;
   }
 }
 
